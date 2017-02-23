@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/RegisterToolBar"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways|snap">
+        <Button android:id="@+id/RegisterBack"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/backbtn"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/RegisterToolBar"
+        android:layout_centerHorizontal="true">
+
+        <EditText android:id="@+id/RegisterUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:paddingBottom="2dp"
+            android:hint="请输入用户名"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:textColorHint="#f5f5f5"
+            android:paddingLeft="20dp"
+            android:textColor="#f5f5f5"
+            android:background="@drawable/shape2"
+            android:drawableLeft="@drawable/username"/>
+        <EditText android:id="@+id/RegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:paddingTop="2dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="2dp"
+            android:hint="请输入密码"
+            android:password="true"
+            android:textSize="15sp"
+            android:textColorHint="#f5f5f5"
+            android:paddingLeft="20dp"
+            android:textColor="#f5f5f5"
+            android:background="@drawable/shape2"
+            android:drawableLeft="@drawable/password" />
+        <EditText android:id="@+id/RegisterPasswordSure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:hint="请再次输入密码"
+            android:password="true"
+            android:textSize="15sp"
+            android:textColorHint="#f5f5f5"
+            android:paddingLeft="20dp"
+            android:textColor="#f5f5f5"
+
+            android:background="@drawable/shape2"
+            android:drawableLeft="@drawable/password" />
+
+
+        <EditText android:id="@+id/RegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:hint="请输入邮箱"
+            android:textSize="15sp"
+            android:textColorHint="#f5f5f5"
+            android:paddingLeft="20dp"
+            android:textColor="#f5f5f5"
+            android:background="@drawable/shape2"
+            android:drawableLeft="@drawable/email" />
+
+        <EditText android:id="@+id/RegisterTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:hint="请输入联系电话"
+            android:textSize="15sp"
+            android:textColorHint="#f5f5f5"
+            android:paddingLeft="20dp"
+            android:textColor="#f5f5f5"
+            android:background="@drawable/shape2"
+            android:drawableLeft="@drawable/tel" />
+
+        <Button android:id="@+id/RegisterRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="30dp"
+
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape2"
+            android:gravity="center"
+            android:text="完成注册"
+            android:textStyle="bold"
+            android:textColor="#f5f5f5"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

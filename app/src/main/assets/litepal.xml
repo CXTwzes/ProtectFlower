@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litapal>
+    <dbname value="db"> </dbname>
+    <version value="1" > </version>
+    <list>
+        <mapping class="util.Record">
+        </mapping>
+    </list>
+</litapal>
